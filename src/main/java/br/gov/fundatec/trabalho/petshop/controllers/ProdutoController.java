@@ -23,11 +23,11 @@ public class ProdutoController {
         return ResponseEntity.status(HttpStatus.CREATED).body(novoProduto);
     }
 
-    @GetMapping("/{id}")
-    public ResponseEntity<Produto> buscarProdutoPorId(@PathVariable Long id) {
-        Produto produto = produtoService.buscarProdutoPorId(id);
-        return ResponseEntity.ok(produto);
-    }
+//    @GetMapping("/{id}")
+//    public ResponseEntity<Produto> buscarProdutoPorId(@PathVariable Long id) {
+//        Produto produto = produtoService.buscarProdutoPorId(id);
+//        return ResponseEntity.ok(produto);
+//    }
 
     @PutMapping("/{id}")
     public ResponseEntity<Produto> atualizarProduto(@PathVariable Long id, @RequestBody Produto produtoAtualizado) {

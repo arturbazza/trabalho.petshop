@@ -37,7 +37,7 @@ public class AtendimentoServiceImpl implements AtendimentoService {
 
             Optional<Produto> produtoOptional = produtoService.buscarProdutoPorId(produto.getIdProduto());
             if (produtoOptional.isPresent()) {
-                atendimento.getProdutos().add(produto);
+               // atendimento.getProdutos().add(produto);
                 return atendimentoRepository.save(atendimento);
             }
         }

@@ -1,5 +1,7 @@
 package br.gov.fundatec.trabalho.petshop.services;
 
+import br.gov.fundatec.trabalho.petshop.models.Produto;
+import br.gov.fundatec.trabalho.petshop.repository.ProdutoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
